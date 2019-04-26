@@ -515,7 +515,7 @@ export default function ProfileSeeds() {
 
   return (
     <div>
-      <button onClick={seeds}>Profile</button>
+      <button onClick={seeds}>Profiles</button>
     </div>
   );
 }

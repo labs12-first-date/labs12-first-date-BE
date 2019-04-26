@@ -26,7 +26,7 @@ export default function SeedUser() {
 
   return (
     <div>
-      <button onClick={seed}>hay</button>
+      <button onClick={seed}>STDS</button>
     </div>
   );
 }
