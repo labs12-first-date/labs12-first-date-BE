@@ -31,6 +31,34 @@ export default function OnBoarding() {
       fieldName: 'dateOfBirth',
       onboardingStep: 2
     });
+
+    fb.firestore().collection('onboarding').doc('Y439L9LgiKsp0lnxOyZB').set({
+      prompt: "What is your zip code",
+      inputPlaceholder: "Zip Code",
+      fieldName: 'zipCode',
+      onboardingStep: 3
+    });
+
+    fb.firestore().collection('onboarding').doc('AtW0SiPGenoPRJahY3lH').set({
+      prompt: "How old are you?",
+      inputPlaceholder: "Age",
+      fieldName: 'age',
+      onboardingStep: 3
+    });
+
+    fb.firestore().collection('onboarding').doc('5iANPwUgUAk2ZkXv3Viy').set({
+      prompt: "Gender",
+      inputPlaceholder: "Gender",
+      fieldName: 'matchGender',
+      onboardingStep: 4
+    });
+
+    fb.firestore().collection('onboarding').doc('SNFQiCKGfyn0yn41ylxf').set({
+      prompt: "Distance",
+      inputPlaceholder: "Distance Range",
+      fieldName: 'matchDistance',
+      onboardingStep: 4
+    });
   
 
   };
