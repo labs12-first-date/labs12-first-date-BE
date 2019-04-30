@@ -59,6 +59,27 @@ export default function OnBoarding() {
       fieldName: 'matchDistance',
       onboardingStep: 4
     });
+
+    fb.firestore().collection('onboarding').doc('85711XxwVZGy907Qd8Kk').set({
+      prompt: "I am open to...",
+      inputPlaceholder: "Match Conditions",
+      fieldName: 'matchConditions',
+      onboardingStep: 5
+    });
+
+    fb.firestore().collection('onboarding').doc('jh391OKw3ytF97pP2nOh').set({
+      prompt: "I have...",
+      inputPlaceholder: "Condition(s)",
+      fieldName: 'conditions',
+      onboardingStep: 6
+    });
+
+    fb.firestore().collection('onboarding').doc('mQZbenwjAZwYEdhQ5Lbp').set({
+      prompt: "Condition(s) Description",
+      inputPlaceholder: "Description",
+      fieldName: 'conditionDescription',
+      onboardingStep: 6
+    });
   
 
   };
