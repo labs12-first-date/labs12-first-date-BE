@@ -4,21 +4,21 @@ import React from 'react';
 
 export default function SeedUser() {
   const seed = () => {
-    const aids = [
-      { condition: 'Aids', enabled: true },
-      { condition: 'Clap', enabled: true },
-      { condition: 'Gonorrhea', enabled: false },
-      { condition: 'Hiv', enabled: true },
-      { condition: 'HepC', enabled: false },
-      { condition: 'Herpes', enabled: true },
-      { condition: 'HepD', enabled: false },
-      { condition: 'HepB', enabled: true },
-      { condition: 'Syphyllis', enabled: false },
-      { condition: 'Crabs', enabled: true },
-      { condition: 'Warts', enabled: true }
+    const conditions = [
+      { condition: 'Aids', enabled: true, value: 'AIDS', label: 'AIDS' },
+      { condition: 'Chlamydia', enabled: true, value: 'Chlamydia', label: 'Chlamydia' },
+      { condition: 'Gonorrhea', enabled: true, value: 'Gonorrhea', label: 'Gonorrhea' },
+      { condition: 'Hiv', enabled: true, value: 'HIV', label: 'HIV' },
+      { condition: 'HepC', enabled: true, value: 'Hep C', label: 'Hep C' },
+      { condition: 'Herpes', enabled: true,value: 'Herpes', label: 'Herpes'},
+      { condition: 'HepD', enabled: true, value: 'Hep D', label: 'Hep D' },
+      { condition: 'HepB', enabled: true, value: 'Hep B', label: 'Hep B' },
+      { condition: 'Syphyllis', enabled: true, value: 'Syphyllis', label: 'Syphyllis' },
+      { condition: 'Crabs', enabled: true, value: 'Crabs', label: 'Crabs' },
+      { condition: 'Warts', enabled: true, value: 'Genital Warts', label: 'Genital Warts' }
     ];
 
-    aids.forEach(element => {
+    conditions.forEach(element => {
       fb.firestore().collection('stds').add(element);
     });
   };
