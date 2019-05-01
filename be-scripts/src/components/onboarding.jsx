@@ -45,13 +45,6 @@ export default function Onboarding() {
         input_type: 'number'
       },
       {
-        prompt: 'How old are you?',
-        input_placeholder: 'Age',
-        field__name: 'age',
-        onboarding_step: 3,
-        input_type: 'number'
-      },
-      {
         prompt: 'Gender',
         input_placeholder: 'Gender',
         field_name: 'match_gender',
