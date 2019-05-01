@@ -1,7 +1,7 @@
 import fb from '../firebase/config';
 import React from 'react';
 
-export default function Settings() {
+export default function Gender() {
   const seeds = () => {
     const gender = [
       { value: 'Female', label: 'Female' },
