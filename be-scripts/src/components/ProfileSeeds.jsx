@@ -3,7 +3,7 @@ import fb from '../firebase/config';
 import React from 'react';
 
 export default function ProfileSeeds() {
-  const seeds = () => {
+  const seed = () => {
     const profiles = [{"zip":null,"email":null,"gender":null,"date_of_birth":null,"first_name":null,"last_name":null,"looking_for":null,"bio":null,"condition_details":null,"condition":null,"match_condition":null,"main_photo":null,"liked":null,"matches":null,"profile_step":null,"profile_completed":null},
     {"zip":null,"email":null,"gender":null,"date_of_birth":null,"first_name":null,"last_name":null,"looking_for":null,"bio":null,"condition_details":null,"condition":null,"match_condition":null,"main_photo":null,"liked":null,"matches":null,"profile_step":null,"profile_completed":null},
     {"zip":null,"email":null,"gender":null,"date_of_birth":null,"first_name":null,"last_name":null,"looking_for":null,"bio":null,"condition_details":null,"condition":null,"match_condition":null,"main_photo":null,"liked":null,"matches":null,"profile_step":null,"profile_completed":null},
@@ -514,7 +514,7 @@ export default function ProfileSeeds() {
 
   return (
     <div>
-      <button onClick={seeds}>Profiles</button>
+      <button onClick={seed}>Profiles</button>
     </div>
   );
 }

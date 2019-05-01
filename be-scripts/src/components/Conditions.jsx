@@ -2,7 +2,7 @@ import fb from '../firebase/config';
 
 import React from 'react';
 
-export default function SeedUser() {
+export default function Condition() {
   const seed = () => {
     const conditions = [
       { condition: 'Aids', enabled: true, value: 'AIDS', label: 'AIDS' },

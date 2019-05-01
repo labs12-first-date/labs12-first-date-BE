@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Profiles from './components/ProfileSeeds';
-import Seeds from './components/UserSeeds';
+import Conditions from './components/Conditions';
 import OnBoarding from './components/onboarding';
 
 function App() {
   return (
     <div className="App">
       <Profiles />
-      <Seeds />
+      <Conditions />
       <OnBoarding />
     </div>
   );

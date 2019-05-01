@@ -1,93 +1,75 @@
 import fb from '../firebase/config';
 import React from 'react';
 
-export default function OnBoarding() {
-  const seeds = () => {
+export default function Onboarding() {
+  const seed = () => {
+    const questions = [
+      {prompt: "What is your first name?",
+      input_placeholder: "First Name",
+      fiel_name: 'firstName',
+      onboarding_step: 1,
+      input_type: 'text'},
+      {prompt: "What is your last name?",
+      input_placeholder: "Last Name",
+      field_name: 'lastName',
+      onboarding_step: 1,
+      input_type: 'text'},
+      {prompt: "What is your gender?",
+      input_placeholder: "Gender",
+      fiel_name: 'gender',
+      onboardin_step: 2,
+      input_type: 'multiSelect'},
+      {prompt: "When's your birthday?",
+      input_placeholder: "MM/DD/YYYY",
+      field_name: 'dateOfBirth',
+      onboarding_step: 2,
+      input_type: 'dateInput'},
+      {prompt: "What is your zip code",
+      input_placeholder: "Zip Code",
+      field_name: 'zipCode',
+      onboarding_step: 3,
+      input_type: 'number'},
+      {prompt: "How old are you?",
+      input_placeholder: "Age",
+      field__name: 'age',
+      onboarding_step: 3,
+      input_type: 'number'},
+      {prompt: "Gender",
+      input_placeholder: "Gender",
+      field_name: 'matchGender',
+      onboarding_step: 4,
+      input_type: 'multiSelect'},
+      {prompt: "Distance",
+      input_placeholder: "Distance Range",
+      field_name: 'matchDistance',
+      onboarding_step: 4,
+      input_type: 'number'},
+      {prompt: "I am open to...",
+      input_placeholder: "Match Conditions",
+      field_name: 'matchConditions',
+      onboarding_step: 5,
+      input_type: 'multiSelect'},
+      {prompt: "I have...",
+      input_placeholder: "Condition(s)",
+      field_name: 'conditions',
+      onboarding_step: 6,
+      input_type: 'multiSelect'},
+      {prompt: "Condition(s) Description",
+      input_placeholder: "Description",
+      field_name: 'conditionDescription',
+      onboarding_step: 6,
+      input_type: 'textarea'}
+    ];
 
-    fb.firestore().collection('onboarding').doc('eJYcGXuBJSrSYlLZhHO9').set({
-      prompt: "What is your first name?",
-      inputPlaceholder: "First Name",
-      fieldName: 'firstName',
-      onboardingStep: 1
+    questions.forEach(element => {
+      fb.firestore().collection('onboarding').add(element);
     });
-
-    fb.firestore().collection('onboarding').doc('Gl4NcAPLec4gUkDtGwaV').set({
-      prompt: "What is your last name?",
-      inputPlaceholder: "Last Name",
-      fieldName: 'lastName',
-      onboardingStep: 1
-    });
-
-    fb.firestore().collection('onboarding').doc('plzR2n89ekKPnxLCGSyP').set({
-      prompt: "What is your gender?",
-      inputPlaceholder: "Gender",
-      fieldName: 'gender',
-      onboardingStep: 2
-    });
-
-    fb.firestore().collection('onboarding').doc('ZCRBzXVsPwBt0GlorgHj').set({
-      prompt: "When's your birthday?",
-      inputPlaceholder: "MM/DD/YYYY",
-      fieldName: 'dateOfBirth',
-      onboardingStep: 2
-    });
-
-    fb.firestore().collection('onboarding').doc('Y439L9LgiKsp0lnxOyZB').set({
-      prompt: "What is your zip code",
-      inputPlaceholder: "Zip Code",
-      fieldName: 'zipCode',
-      onboardingStep: 3
-    });
-
-    fb.firestore().collection('onboarding').doc('AtW0SiPGenoPRJahY3lH').set({
-      prompt: "How old are you?",
-      inputPlaceholder: "Age",
-      fieldName: 'age',
-      onboardingStep: 3
-    });
-
-    fb.firestore().collection('onboarding').doc('5iANPwUgUAk2ZkXv3Viy').set({
-      prompt: "Gender",
-      inputPlaceholder: "Gender",
-      fieldName: 'matchGender',
-      onboardingStep: 4
-    });
-
-    fb.firestore().collection('onboarding').doc('SNFQiCKGfyn0yn41ylxf').set({
-      prompt: "Distance",
-      inputPlaceholder: "Distance Range",
-      fieldName: 'matchDistance',
-      onboardingStep: 4
-    });
-
-    fb.firestore().collection('onboarding').doc('85711XxwVZGy907Qd8Kk').set({
-      prompt: "I am open to...",
-      inputPlaceholder: "Match Conditions",
-      fieldName: 'matchConditions',
-      onboardingStep: 5
-    });
-
-    fb.firestore().collection('onboarding').doc('jh391OKw3ytF97pP2nOh').set({
-      prompt: "I have...",
-      inputPlaceholder: "Condition(s)",
-      fieldName: 'conditions',
-      onboardingStep: 6
-    });
-
-    fb.firestore().collection('onboarding').doc('mQZbenwjAZwYEdhQ5Lbp').set({
-      prompt: "Condition(s) Description",
-      inputPlaceholder: "Description",
-      fieldName: 'conditionDescription',
-      onboardingStep: 6
-    });
-  
-
   };
-
+  
 
   return (
     <div>
-      <button onClick={seeds}>Questions</button>
+      <button onClick={seed}>Onboarding</button>
     </div>
   );
 }
