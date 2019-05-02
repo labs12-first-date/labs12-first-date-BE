@@ -29,7 +29,7 @@ export default function Onboarding() {
       {
         prompt: 'How do you define your gender?',
         input_placeholder: 'Gender',
-        fiel_name: 'gender',
+        field_name: 'gender',
         onboarding_step: 1,
         input_type: 'multi_select',
         card_title: 'A little about you...'
