@@ -8,7 +8,8 @@ export default function Onboarding() {
         prompt:
           'Welcome! Tell us a little about yourself so we can save you time by finding tailored matches for you!',
         onboarding_step: 0,
-        card_title: "We are glad you're here!"
+        card_title: "We are glad you're here!",
+        prompt_order: 1
       },
       {
         prompt: 'What is your first name?',
@@ -17,7 +18,7 @@ export default function Onboarding() {
         onboarding_step: 1,
         input_type: 'text',
         card_title: 'A little about you...',
-        prompt_order: 1
+        prompt_order: 2
       },
       {
         prompt: 'What is your last name?',
@@ -26,7 +27,7 @@ export default function Onboarding() {
         onboarding_step: 1,
         input_type: 'text',
         card_title: 'A little about you...',
-        prompt_order: 2
+        prompt_order: 3
       },
       {
         prompt: 'How do you define your gender?',
@@ -35,7 +36,7 @@ export default function Onboarding() {
         onboarding_step: 1,
         input_type: 'multi_select',
         card_title: 'A little about you...',
-        prompt_order: 3
+        prompt_order: 4
       },
       {
         prompt: 'When is your birthday?',
@@ -44,7 +45,7 @@ export default function Onboarding() {
         onboarding_step: 2,
         input_type: 'date_input',
         card_title: 'A little more about you...',
-        prompt_order: 4
+        prompt_order: 5
       },
       {
         prompt: 'What is your zip code',
@@ -53,7 +54,7 @@ export default function Onboarding() {
         onboarding_step: 2,
         input_type: 'number',
         card_title: 'A little more about you...',
-        prompt_order: 5
+        prompt_order: 6
       },
       {
         prompt: 'What makes you tick?',
@@ -62,7 +63,7 @@ export default function Onboarding() {
         onboarding_step: 2,
         input_type: 'text_area',
         card_title: 'A little more about you...',
-        prompt_order: 6
+        prompt_order: 7
       },
       {
         prompt: 'How does your ideal match define their gender?',
@@ -71,7 +72,7 @@ export default function Onboarding() {
         onboarding_step: 3,
         input_type: 'multi_select',
         card_title: 'What do you like?',
-        prompt_order: 7
+        prompt_order: 8
       },
       {
         prompt: "I wouldn't mind meeting someone with...",
@@ -80,7 +81,7 @@ export default function Onboarding() {
         onboarding_step: 3,
         input_type: 'multi_select',
         card_title: 'What do you like?',
-        prompt_order: 8
+        prompt_order: 9
       },
       {
         prompt: 'I have...',
@@ -89,7 +90,7 @@ export default function Onboarding() {
         onboarding_step: 4,
         input_type: 'multi_select',
         card_title: 'The good stuff!',
-        prompt_order: 9
+        prompt_order: 10
       },
       {
         prompt: 'Care to elaborate?',
@@ -98,7 +99,7 @@ export default function Onboarding() {
         onboarding_step: 4,
         input_type: 'text_area',
         card_title: 'The good stuff!',
-        prompt_order: 10
+        prompt_order: 11
       },
       {
         prompt: 'Show us what you look like!',
@@ -106,14 +107,14 @@ export default function Onboarding() {
         onboarding_step: 5,
         input_type: 'image',
         card_title: 'Say Cheese!!!',
-        prompt_order: 11
+        prompt_order: 12
       },
       {
         prompt:
           "GREAT JOB! Swipe this card to jump in with both feet! Good luck! Remember at any time you can go to settings to sign up for premium or change any settings you'd like",
         onboarding_step: 5,
         card_title: 'Say Cheese!!!',
-        prompt_order: 12
+        prompt_order: 13
       }
     ];
 
