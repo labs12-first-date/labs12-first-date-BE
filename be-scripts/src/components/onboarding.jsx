@@ -100,8 +100,8 @@ export default function Onboarding() {
       {
         prompt:
           "GREAT JOB! Swipe this card to jump in with both feet! Good luck! Remember at any time you can go to settings to sign up for premium or change any settings you'd like",
-        onboarding_step: 6,
-        card_title: 'Certified Date Ready!'
+        onboarding_step: 5,
+        card_title: 'Say Cheese!!!'
       }
     ];
 
