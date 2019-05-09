@@ -14510,7 +14510,7 @@ export default function ProfileSeeds() {
 
     profiles.forEach(element => {
       fb.firestore()
-        .collection('profiles-test')
+        .collection('profiles')
         .add(element);
     });
 
