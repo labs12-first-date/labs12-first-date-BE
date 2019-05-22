@@ -42,8 +42,9 @@ UnBlush is the first dating app for people of all or no genders with STD(s). UnB
         .add(element);
     });
 	
-	Documentation - https://firebase.google.com/docs
-    For further documentation check out or main [README](https://github.com/labs12-first-date/labs12-first-date-FE/blob/master/README.md)
+Documentation - [FireBase Docs](https://firebase.google.com/docs)
+
+For further documentation check out or main [README](https://github.com/labs12-first-date/labs12-first-date-FE/blob/master/README.md)
 
 # Licensing
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
