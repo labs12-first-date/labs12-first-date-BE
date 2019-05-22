@@ -32,18 +32,18 @@ UnBlush is the first dating app for people of all or no genders with STD(s). UnB
 ## Firebase 
 ![Firebase](https://img.shields.io/badge/Firebase-DB-orange.svg)
 
-  This is a NoSQL database so there are no API's to point the application to.
-  We accomplished all CRUD operations using Firebase built-in functions.
-  Here is an example of what type of Firebase functions we used to apply CRUD:
+    This is a NoSQL database so there are no API's to point the application to.
+    We accomplished all CRUD operations using Firebase built-in functions.
+    Here is an example of what type of Firebase functions we used to apply CRUD:
 
-  profiles.forEach(element => {
+    profiles.forEach(element => {
       fb.firestore()
         .collection('NAME_OF_COLLECTION')
         .add(element);
     });
 	
 	Documentation - https://firebase.google.com/docs
-  For further documentation check out or main [README](https://github.com/labs12-first-date/labs12-first-date-FE/blob/master/README.md)
+    For further documentation check out or main [README](https://github.com/labs12-first-date/labs12-first-date-FE/blob/master/README.md)
 
 # Licensing
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
